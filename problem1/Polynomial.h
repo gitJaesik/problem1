@@ -24,6 +24,7 @@ public:
 public:
 	Polynomial();
 	Polynomial(string name);
+	//Polynomial(const Polynomial& p);
 	~Polynomial();
 
 	// 기본 더하기 함수 (유일한 Inserting 기능)
@@ -33,8 +34,15 @@ public:
 	void DisplayPolynomial();
 
 	// Polynomial 복사하기
-	Polynomial(const Polynomial& p);
+	void operator=(const Polynomial& p);
+	//const Polynomial& operator=(const Polynomial& p);
+
+	Polynomial operator+(const Polynomial& p);
+	Polynomial operator-(const Polynomial& p);
 
 	// multiply시 함수를 변수의 갯수만큼 만들어서 복사하여야 함
+	Polynomial operator*(const Polynomial& p);
+
+	void Derivative();
 };
 
