@@ -9,6 +9,7 @@ class Polynomial
 {
 public:
 	struct Node{
+
 		// 데이타 파트
 		double node_dCoeffient;
 		int node_iDegree;
@@ -35,7 +36,6 @@ public:
 
 	// Polynomial 복사하기
 	void operator=(const Polynomial& p);
-	//const Polynomial& operator=(const Polynomial& p);
 
 	Polynomial operator+(const Polynomial& p);
 	Polynomial operator-(const Polynomial& p);

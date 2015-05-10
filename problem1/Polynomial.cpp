@@ -164,12 +164,6 @@ void Polynomial::operator=(const Polynomial& p)
 	m_pHead = p.m_pHead;
 }
 
-//const Polynomial& Polynomial::operator=(const Polynomial& p)
-//{
-//	m_pHead = p.m_pHead;
-//	return *this;
-//}
-
 Polynomial Polynomial::operator+(const Polynomial& p)
 {
 	Polynomial result;
